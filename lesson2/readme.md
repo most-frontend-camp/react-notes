@@ -69,4 +69,4 @@ function App() {
 ```
 
 Результат такого кода будет ниже
-![alt image](props-def.png)
+![alt image](props-def.png =100x100)
