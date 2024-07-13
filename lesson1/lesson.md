@@ -27,3 +27,23 @@ React:
 1. Архитектура основано на компонентах
 2. Высокая производельность 
 3. Легко управлять состоянием то есть `state` - данные, которые могут меняться
+
+
+### React Installation
+
+### React Project Files
+
+
+### React Project Architecture
+
+Паттерны
+
+Основные компоненты Flux
+- View
+- Actions
+- Dispatcher
+- Store
+
+More about link (https://github.com/facebookarchive/flux)
+
+
