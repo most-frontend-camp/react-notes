@@ -89,3 +89,18 @@ export default function Cadr({title, description}){
 
 ПРИМЕЧАНИЕ. 
 Ключевой особенностью `JSX` является возможность использовать фигурные скобки для добавления выражений `JavaScript` в `HTML`-подобные элементы.
+
+
+### Props 
+Свойства могут напоминать вам атрибуты HTML, но через них можно передавать любые значения JavaScript, включая объекты, массивы и функции.
+
+1. Non string props
+2. Passing arrays and objects as props
+3. Conditional props
+4. Rendering with map
+
+### Additional
+
+https://typeofnan.dev/conditional-component-props-react/ 
+https://www.freecodecamp.org/news/react-conditional-rendering/#what-is-react-conditional-rendering 
+https://www.robinwieruch.de/react-pass-props-to-component/#react-props-destructuring 
