@@ -69,4 +69,4 @@ function App() {
 ```
 
 Результат такого кода будет ниже
-![alt image](props-default.png)
+![alt image](props-def.png)
