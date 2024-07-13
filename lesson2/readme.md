@@ -1,5 +1,7 @@
 # Props
 
+* React Props аналогичны аргументам функции в JavaScript и атрибутам в HTML.
+
 React components use props to communicate with each other. 
 
 Every parent component can pass some information to its child components by giving them props. 
@@ -32,7 +34,7 @@ export default Card;
 ```
 
 
-### Passing props
+### Props по умолчанию
 
 Props по умолчанию используются для установки значений по умолчанию для props таким образом, что если конкретный props не получает никакого значения, то будет использоваться значение по умолчанию. 
 
@@ -69,4 +71,21 @@ function App() {
 ```
 
 Результат такого кода будет ниже
-![alt image](props-def.png =100x100)
+![alt image](props-def.png)
+
+### Props 
+Давайте просто передадим `props`, используя фигурные скобки `{}` 
+
+```js
+export default function Cadr({title, description}){
+    return(
+        <div>
+            <h1>{title}</h1>
+            <p>{description}</p>
+        </div>
+    )
+}
+```
+
+ПРИМЕЧАНИЕ. 
+Ключевой особенностью `JSX` является возможность использовать фигурные скобки для добавления выражений `JavaScript` в `HTML`-подобные элементы.
