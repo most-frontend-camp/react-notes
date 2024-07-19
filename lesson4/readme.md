@@ -20,3 +20,88 @@ Quite good guide is https://www.w3schools.com/react/react_usestate.asp
 
 Go through from 
 https://react.dev/reference/react/useState 
+
+
+### Work with onChange
+
+```js
+function App() {
+
+  const [text, setText] = useState('hello');
+
+  function handleChange(e) {
+    setText(e.target.value);
+  }
+
+  return (
+    <div>
+      <input value={text} onChange={handleChange}/>
+      <p>Ты пишешь вот этот текст - {text}</p>
+      <button onClick={() => setText('salem!')}>
+        Reset
+      </button>
+  
+    </div>
+  )
+}
+
+export default App
+```
+
+Result will be 
+alt[]
+
+### Boolean `onChange` 
+```js
+function App() {
+
+  const [liked, setLiked] = useState(true);
+
+  function handleChange(e) {
+    setLiked(e.target.checked);
+  }
+
+  return (
+    <div>
+      <label htmlFor="">
+        <input type='checkbox' checked={liked} onChange={handleChange}/>
+        Я согласен
+      </label>
+
+      <p>Я {liked ? 'согласен' : 'не согласен'} c условиями </p>
+  
+    </div>
+  )
+}
+
+export default App```
+
+```js
+function App() {
+
+
+  const [name, setName] = useState('Lamine');
+  const [age, setAge] = useState(17);
+
+  return (
+    <div>
+        <input
+          value={name}
+          onChange={e=> setName(e.target.value)}
+        />
+
+        <button onClick={ () => setAge(age + 10) 
+        }>
+          Плюсуй мой возраст на 10 лет
+        </button>
+
+
+
+      <p>Салем {name}. Тебе {age}. Поидее тебе же нельзя играть</p>
+  
+    </div>
+  )
+}
+
+export default App
+```
