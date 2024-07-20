@@ -75,7 +75,15 @@ function randomEmoji() {
     setEmojis(
         (prevEmojis) => {return prevEmojis.filter(e => e.id !== id)}
         );
-    };
+    };(
+
+  const makeHearts = () => {
+    setEmojis((prevEmojis) => {
+      return prevEmojis.map((e) => {
+        return {...e, emoji: "🦁"};
+      });
+    });
+  };
 
   return (
     <div>
@@ -85,6 +93,7 @@ function randomEmoji() {
           ))
         }
         <button onClick={addEmoji}>Add emoji</button>
+        <button onClick={makeHearts}>Make All Lions</button>
     </div>
   );
 }
