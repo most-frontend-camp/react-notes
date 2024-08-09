@@ -17,8 +17,6 @@ sing()
     })
 
 
-
-
 const login = async (username, password) => {
     if (!username || !password) throw 'Missing Credentials'
     if (password === 'corgifeetarecute') return 'WELCOME!'
